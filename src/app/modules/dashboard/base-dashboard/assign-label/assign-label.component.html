@@ -1,0 +1,20 @@
+<mat-card class="card">
+    <div class="Add-header">
+      <mat-card class="content">
+        <mat-card-content class="Details">Assign Labels</mat-card-content>
+      </mat-card>
+    </div>
+         <mat-card-content>
+       
+         <form class="login" [formGroup]="labelForm" (ngSubmit)="onSubmit()">
+           <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-select placeholder="Select Label" formControlName="labels"  multiple >
+                  <mat-option *ngFor="let label of labels" [value]="label.label">{{ label.label }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+           <button type="submit" mat-raised-button color="primary" [mat-dialog-close]="true">Submit</button>
+         </form>
+     </mat-card-content>
+   </mat-card>

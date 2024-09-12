@@ -1,0 +1,82 @@
+
+.side-menu a{
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+  }
+  .side-menu a:hover{
+    background-color: #545866;
+  
+  }
+  .page-content{
+    display: inherit ;
+  }
+  .active {
+    background: #545866;
+    font-weight: 600;
+    border-radius: 0px;
+    a {
+      letter-spacing: 0.3px;
+      font-weight: 600;
+      color: #545866;
+      margin-left: 13px;
+     }
+  }
+  
+  .sidenav {
+      height: 100%; /* Set full height */
+      width: 250px; /* Set width */
+      position: relative; /* Fixed position */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #333; /* Black */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 20px; /* Place content 60px from the top */
+    }
+    
+    .sidenav a {
+      padding: 4px 4px 4px 4px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #000000;
+      font-weight: bold;
+      display: block;
+    }
+    
+    
+  h3{
+    margin: 3px 0 0 5px;
+    // text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    text-shadow: #000000;
+  }
+  .mat-expansion-panel::after {
+    transform: rotate(225deg) !important;
+  }
+  .mat-expansion-panel-header:hover{
+    background: #a6afe4 !important;
+    color: rgb(0, 22, 148) !important;
+  }
+  // for the mat-expansion indicator to displayed when it is disabled
+  .mat-expansion-panel {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px -5px;
+    box-shadow: none;
+    background: none;
+  }
+  .mat-expansion-panel-header{
+    padding: 0;
+    margin-left: 0;
+    margin-right: 20px;
+    color: white !important;
+  }
+  .mat-nav-list a{
+    margin:0 -15px;
+  }
+  

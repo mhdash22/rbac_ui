@@ -1,0 +1,23 @@
+<div class="user-profile">
+
+    <div class="side-menu">
+        <mat-accordion >
+            <!-- <mat-expansion-panel *ngFor="let menu of menulist; first as isFirst" [expanded]="isFirst" hideToggle>
+                <mat-expansion-panel-header>
+                <h3>{{menu.name}}</h3>
+                   
+                </mat-expansion-panel-header> -->
+                <mat-nav-list>
+                  <a *ngFor="let submenu of menulist.data" 
+                     [routerLink]="submenu.id" 
+                     routerLinkActive="active">{{ submenu.title }}</a>
+                </mat-nav-list>
+              <!-- </mat-expansion-panel> -->
+
+            <!-- <mat-divider></mat-divider>  -->
+    
+        </mat-accordion>
+    </div>
+
+</div>
+

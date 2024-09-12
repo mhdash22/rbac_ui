@@ -1,0 +1,19 @@
+<mat-card class="card">
+    <div class="Add-header">
+      <mat-card class="content">
+        <mat-card-content class="Details">Add Label</mat-card-content>
+      </mat-card>
+    </div>
+         <mat-card-content>
+       
+         <form class="login" [formGroup]="labelForm" (ngSubmit)="onSubmit()">
+           <div class="row">
+            <mat-form-field appearance="outline">
+              <mat-label>Label </mat-label>
+              <input matInput placeholder="Enter Label" formControlName="label">
+            </mat-form-field>
+            </div>
+           <button type="submit" mat-raised-button color="primary" [mat-dialog-close]="true">Submit</button>
+         </form>
+     </mat-card-content>
+   </mat-card>

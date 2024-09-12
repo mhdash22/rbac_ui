@@ -1,0 +1,14 @@
+<div class="btn-profile">
+    <button [matMenuTriggerFor]="profile" mat-icon-button  class="m-r-5" style="margin-top: -4px;"> <mat-icon>account_circle</mat-icon></button>
+</div>
+
+<mat-menu #profile="matMenu" class="mymegamenu">
+    <!-- <button mat-menu-item>
+        <mat-icon class="option-icon">settings</mat-icon> Settings </button>
+    <button mat-menu-item routerLink="profile">
+        <mat-icon class="option-icon">account_box</mat-icon> Profile </button>
+    <button  mat-menu-item>
+        <mat-icon class="option-icon">notifications_off</mat-icon> Disable notifications </button> -->
+    <button mat-menu-item (click)="logout()" routerLink="/login">
+        <mat-icon class="option-icon">exit_to_app</mat-icon> Logout </button>
+</mat-menu>
